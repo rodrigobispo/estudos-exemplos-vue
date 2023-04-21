@@ -18,6 +18,11 @@
             <i class="fas fa-tasks"></i> Simple Form
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'sock' }" class="link">
+            <i class="fas fa-socks"></i> Buy Socks
+          </router-link>
+        </li>
       </ul>
     </nav>
   </header>
