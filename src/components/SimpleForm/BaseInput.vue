@@ -7,7 +7,7 @@
         v-bind="$attrs"
         :value="modelValue"
         :placeholder="label"
-        @input="setAttribute($event)"
+        @update:modelValue="($event.target as HTMLInputElement).value"
       >
     </div>
   </div>
@@ -26,11 +26,6 @@ export default defineComponent({
     modelValue: {
       type: [String, Number],
       default: ''
-    }
-  },
-  methods: {
-    setAttribute($event: Event) {
-      this.$emit('update:modelValue', ($event.target as HTMLInputElement).value)
     }
   }
 })
