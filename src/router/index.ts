@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import SimpleForm from '../views/SimpleForm/SimpleForm.vue'
 import ProductSock from '../views/StoreSocks/ProductSock.vue'
+import LoginForm from '../views/Login/LoginForm.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,6 +19,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/sock',
     name: 'sock',
     component: ProductSock
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginForm
   },
 ]
 

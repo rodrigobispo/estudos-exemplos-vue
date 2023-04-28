@@ -23,6 +23,11 @@
             <i class="fas fa-socks"></i> Buy Socks
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'login' }" class="link">
+            <i class="fas fa-sign-in"></i> Login
+          </router-link>
+        </li>
       </ul>
     </nav>
   </header>
