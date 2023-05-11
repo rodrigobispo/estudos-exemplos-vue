@@ -28,6 +28,11 @@
             <i class="fas fa-sign-in"></i> Login
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'methodsComputedDiff' }" class="link">
+            <i class="fas fa-comments"></i> Methods & Computed
+          </router-link>
+        </li>
       </ul>
     </nav>
   </header>

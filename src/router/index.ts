@@ -25,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'login',
     component: LoginForm
   },
+  {
+    path: '/methodsComputedDiff',
+    name: 'methodsComputedDiff',
+    component: () => import('@/views/MethodsComputedDiff/MethodsComputedDiff.vue')
+  },
 ]
 
 const router = createRouter({
