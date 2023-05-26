@@ -7,7 +7,7 @@
         v-bind="$attrs"
         :value="modelValue"
         :placeholder="label"
-        @update:modelValue="($event.target as HTMLInputElement).value"
+        @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value.toUpperCase())"
       >
     </div>
   </div>
