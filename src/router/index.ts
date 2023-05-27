@@ -30,6 +30,11 @@ const routes: Array<RouteRecordRaw> = [
     name: 'methodsComputedDiff',
     component: () => import('@/views/MethodsComputedDiff/MethodsComputedDiff.vue')
   },
+  {
+    path: '/githubUserProfile',
+    name: 'githubUserProfile',
+    component: () => import('@/views/GithubUserProfile/GithubUserProfile.vue')
+  },
 ]
 
 const router = createRouter({

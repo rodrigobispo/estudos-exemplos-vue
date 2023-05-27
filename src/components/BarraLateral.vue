@@ -33,6 +33,11 @@
             <i class="fas fa-comments"></i> Methods & Computed
           </router-link>
         </li>
+        <li>
+          <router-link :to="{ name: 'githubUserProfile' }" class="link">
+            <i class="fas fa-comments"></i> Github User Profile
+          </router-link>
+        </li>
       </ul>
     </nav>
   </header>
